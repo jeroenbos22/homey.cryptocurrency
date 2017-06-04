@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="/manager/webserver/assets/js/jquery.js"></script>
+    </head>
+    <body>
+        <h1>Cryptocurrency</h1>
+        <p data-i18n="settings.refresh"></p>
+        <p>
+            <select id="auto_refresh">
+                <option data-i18n="settings.disabled" value="0"></option>
+                <option value="1">1 min</option>
+                <option value="5">5 min</option>
+                <option value="15">15 min</option>
+                <option value="60">60 min</option>
+            </select>
+        </p>
+        
+        <p style="display:none; color: green; text-align: right;" class="saved" data-i18n="settings.saved"></p>
+        <button class="right" onclick="save();" data-i18n="settings.save"></button>
+        <script type="text/javascript">
+        function onHomeyReady(){
+            Homey.ready();
+        }
+
+        function save() {
+            Homey.set('auto_refresh', parseInt(document.getElementById('auto_refresh').value));
+        
+            $('.saved').hide();
+            setTimeout(function() { $('.saved').show(); }, 500);
+        }
+        </script>
+    </body>
+</html>

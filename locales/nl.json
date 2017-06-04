@@ -1,0 +1,9 @@
+{
+    "settings": {
+        "intro": "Geef hieronder komma-gescheiden op welke coins je wilt volgen.",
+        "refresh": "Ververs-interval, om handmatig te vernieuwen kies je uitgeschakeld en gebruik je de flow-card in de action kolom om vernieuwen handmatig aan te roepen.",
+        "disabled": "Uitgeschakeld",
+        "save": "Opslaan",
+        "saved": "Succesvol opgeslagen"
+    }
+}

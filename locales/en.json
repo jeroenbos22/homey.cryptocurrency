@@ -1,0 +1,9 @@
+{
+    "settings": {
+        "intro": "Please supply the coins you want to follow comma-seperated.",
+        "refresh": "Refresh-interval, to renew manually choose disable and trigger it using the flow-card in the action column.",
+        "disabled": "Disabled",
+        "save": "Save changes",
+        "saved": "Settings saved"
+    }
+}

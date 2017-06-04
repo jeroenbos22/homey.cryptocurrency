@@ -1,0 +1,133 @@
+{
+  "id": "homey.cryptocurrency",
+  "name": {
+    "en": "Cryptocurrency"
+  },
+  "version": "0.0.1",
+  "compatibility": ">=0.9",
+  "description": {
+    "en": "Cryptocurrency"
+  },
+  "category": "tools",
+  "images": {
+    "large": "assets/images/large.jpg",
+    "small": "assets/images/small.jpg"
+  },
+  "author": {
+    "name": "Jeroen Bos",
+    "email": "jeroenbos22@gmail.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Jeroen Bos",
+        "email": "jeroenbos22@gmail.com"
+      }
+    ]
+  },
+  "flow": {
+        "triggers": [
+            {
+                "id": "coin_updated",
+                "title": {
+                    "en": "A coin was updated",
+                    "nl": "Een munt is ge-update"
+                },
+                "args": [
+                    {
+                        "name": "coin",
+                        "type": "autocomplete",
+                        "placeholder": "BTC"
+                    }
+                ],
+                 "tokens": [
+                    {
+                        "name": "name",
+                        "title": {
+                            "en": "Name",
+                            "nl": "Naam"
+                        },
+                        "example": {
+                            "en": "BTC",
+                            "nl": "BTC"
+                        }
+                    },
+                    {
+                        "name": "symbol",
+                        "title": {
+                            "en": "Symbol",
+                            "nl": "Afkorting"
+                        },
+                        "example": {
+                            "en": "BTC",
+                            "nl": "BTC"
+                        }
+                    },
+                    {
+                        "name": "rank",
+                        "type": "number",
+                        "title": {
+                            "en": "Rank",
+                            "nl": "Rang"
+                        },
+                        "example": 120
+                    },
+                    {
+                        "name": "price_usd",
+                        "type": "number",
+                        "title": {
+                            "en": "USD price",
+                            "nl": "USD prijs"
+                        },
+                        "example": 1.2
+                    },
+                    {
+                        "name": "price_eur",
+                        "type": "number",
+                        "title": {
+                            "en": "EUR price",
+                            "nl": "EUR prijs"
+                        },
+                        "example": 1.2
+                    },
+                    {
+                        "name": "market_cap_usd",
+                        "type": "number",
+                        "title": {
+                            "en": "Market Cap (USD)",
+                            "nl": "Market Cap (USD)"
+                        },
+                        "example": 1.1
+                    },
+                    {
+                        "name": "volume",
+                        "type": "number",
+                        "title": {
+                            "en": "Volume (USD)",
+                            "nl": "Volume (USD)"
+                        },
+                        "example": 12345
+                    },
+                    {
+                        "name": "percent_change",
+                        "type": "number",
+                        "title": {
+                            "en": "Percentage change (24h)",
+                            "nl": "Procentuele verandering (24 uur)"
+                        },
+                        "example": 12
+                    }
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "id": "refresh_data",
+                "title": {
+                    "en": "Refresh coin-data",
+                    "nl": "Vernieuw munt-informatie"
+                }
+            }
+        ]
+    }
+}
